@@ -1,0 +1,176 @@
+
+/* Hero Section */
+.hero {
+  height: 200px;
+  position: relative;
+  display: flex;
+  background: url('Image/bg1.jpg') center/cover no-repeat;
+
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 20, 40, 0.6);
+}
+
+.overlay {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.overlay h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.p1 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.p1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p1 span {
+  color: #f0f0f0;
+}
+
+/*end of header*/
+.container {
+  display: flex;
+padding-top: 2%;
+  gap:40px;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.vacancies, .career-form {
+  background: #fff;
+  padding: 20px;
+  flex: 1;
+}
+
+.vacancies h2, .career-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.vacancy-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  height:80%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.vacancy-box p {
+text-align:left;
+font-size: 20px;
+}
+
+.vacancy-title {
+  background-color: #adabab53;
+  color: rgb(24, 24, 24);
+  font-size: 25px;
+  padding: 8px 12px;
+  border-radius: 4px 4px 0 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact span {
+  color: red;
+  font-weight: bold;
+}
+
+.accordion {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.career-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.file-input {
+  margin: 10px 0 15px;
+}
+
+.captcha {
+  margin-bottom: 15px;
+}
+.captcha p{
+    color: rgb(13, 187, 13);
+   font-size:25px;
+margin-bottom: 2%;
+}
+.captcha-box {
+  width: 80px;
+  margin-left: 10px;
+  text-align: center;
+  font-weight:bold;
+}
+
+.submit-btn {
+  width: 120px;
+  background-color: #d6e5f9;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #b9d4f0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+}
